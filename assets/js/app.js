@@ -10,11 +10,4 @@ Array.from(document.getElementsByClassName('letter')).forEach(letter => {
 $(document).ready(function(){
   $('.scrollspy').scrollSpy();
   $('.parallax').parallax();
-
-  $('span.text-change').typed({
-    strings: ["Code + Coffee = <3"],
-    typeSpeed: 60,
-    backDelay: 600,
-    callback: function () { $(this) }
-});
 });

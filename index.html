@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Portafolio</title>
   <link rel="icon" href="assets/img/logo.png">
-  <link href="https://fonts.googleapis.com/css?family=Paytone+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dr+Sugiyama|Norican|Paytone+One|Italiana" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -16,7 +16,7 @@
   <div class="navbar-fixed">
     <nav class="white">
       <div class="nav-wrapper">
-        <a href="#!" class="brand-logo center"><img src="assets/img/logo.png"></a>
+        <a href="#home" class="brand-logo center"><img src="assets/img/logo.png"></a>
         <ul class="right hide-on-med-and-down">
           <li><a href="#aboutMe"><i class="material-icons">assignment_ind</i></a></li>
           <li><a href="#skills"><i class="material-icons">computer</i></a></li>
@@ -25,36 +25,32 @@
         </ul>
       </div>
     </nav>
-  </div>  
-  <section>
-    <div class="text">
-      <span class="text-change"></span>
-    </div>
-    <div class="container-video">
-      <div class="filter">
-        <video autoplay loop muted>
-          <source src="assets/img/WhatsApp Video 2018-03-04 at 22.45.02.mp4" type="video/mp4"></video>
-      </div>
-    </div>
+  </div> 
+  <section id="home">
+<!--     <div class="img-container">
+      <h1>Do you feel me now?</h1>
+    </div> -->
+    <div class="clip-text img-container"><span class="c">CODE</span><br><span class="a">READ</span><br><span class="r">LEARN</span><br><span class="l">DEVELOP</span><br><span class="z">LATTE</span></div>
+    <div class="rectangle"></div>
   </section>
   <section id="aboutMe" class="section scrollspy">
     <div class="container">
       <div class="row">
-        <div class="col s6">
+        <div class="col s4 offset-s1">
           <div class="border-img">
               <img src="assets/img/CYMERA_20170418_151016.jpg" alt="">
           </div>
         </div>
-        <div class="col s6 left-align white-text">
-          <h3 class="about-title">ABOUT ME</h3>
-          <blockquote class="text-about">Mi nombre es <span class="underline--magical">Carla Zumarán</span>, soy una <span class="underline--magical">desarrolladora FrontEnd</span> y estudiante de Filosofía que disfruta mucho de investigar, aprender, enseñar, preguntar y crear. Me interesan los proyectos desafiantes, enriquecedores en todos los niveles y enfocados en desarrollo multidisciplinario.</blockquote>
+        <div class="col s7 left-align white-text">
+          <h3 class="about-title">About Me</h3>
+          <blockquote class="text-about">My name is <span class="underline--magical">Carla Zumarán</span>, and I'm a <span class="underline--magical">Front-End developer</span> and Philosophy student who enjoy a lot search, learn, teach, question and develop. I'm always interested in challenging proyects, enriching in all the levels and focuses in multidisciplinary development.</blockquote>
         </div>
       </div>
     </div>
   </section>
   <section id="skills" class="section scrollspy">
     <div class="container center">
-      <h3>MY SKILLS AND HABILITIES</h3>
+      <h3>Skills</h3>
       <div class="row">
         <div class="col s2">
           <!-- Stickers -->
@@ -295,6 +291,7 @@
                 </div>
                 <div class="card-action">
                   <a href="#">CODE</a>
+                  <a href="#">DEMO</a>
                 </div>
               </div>
             </div>
@@ -312,6 +309,7 @@
                 </div>
                 <div class="card-action">
                   <a href="#">CODE</a>
+                  <a href="#">DEMO</a>
                 </div>
               </div>
             </div>
@@ -329,6 +327,7 @@
                 </div>
                 <div class="card-action">
                   <a href="#">CODE</a>
+                  <a href="#">DEMO</a>
                 </div>
               </div>
             </div>
@@ -348,6 +347,7 @@
                   </div>
                   <div class="card-action">
                     <a href="#">CODE</a>
+                    <a href="#">DEMO</a>
                   </div>
                 </div>
               </div>
@@ -365,6 +365,7 @@
                   </div>
                   <div class="card-action">
                     <a href="#">CODE</a>
+                    <a href="#">DEMO</a>
                   </div>
                 </div>
               </div>
@@ -382,6 +383,7 @@
                   </div>
                   <div class="card-action">
                     <a href="#">CODE</a>
+                    <a href="#">DEMO</a>
                   </div>
                 </div>
               </div>
@@ -394,8 +396,21 @@
     <div class="container center">
     <h3>Get Connected</h3>
       <div class="row">
-        <div class="col s12">
-
+        <div class="col s2 offset-s2 border-contact">
+          <h6>Email me</h6>
+          <a href="mailto:carla.zumaran@gmail.com"><i class="fas fa-envelope"></i></a>
+        </div>
+        <div class="col s2 border-contact">
+          <h6>See my Linkdln</h6>
+          <a href="https://www.linkedin.com/in/carla-zumaran/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="col s2 border-contact">
+          <h6>See my works</h6>
+          <a href="https://github.com/carrz"><i class="fab fa-github"></i></a>
+        </div>
+        <div class="col s2 border-contact">
+          <h6>Download CV</h6>
+          <a href="assets/docs/CV-CarlaZumaran.pdf" target="_blank"><i class="fas fa-download"></i></a>
         </div>
       </div>
     </div>
@@ -410,6 +425,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
   <script src="assets/js/app.js"></script>
-  <script src="assets/js/lib/typed.js"></script>
 </body>
 </html>

@@ -6,6 +6,17 @@ body {
   min-height: 100vh;
   flex-direction: column;
 }
+h3 {
+  margin: 1.5rem 0 5rem 0 !important;
+ /*  text-transform: uppercase; */
+  font-family: 'Italiana';
+}
+#aboutMe h3, #works h3 {
+  text-shadow: 0 13.36px 8.896px #751736,0 -2px 1px #fff;
+}
+#skills h3, #contact h3 {
+  text-shadow: 0 13.36px 8.896px #9c9c9c, 0 -2px 1px #fff;
+}
 .no-padding {
   padding: 0 !important;
 }
@@ -20,53 +31,104 @@ body {
   margin-top: 1.5%;
 }
 
-/* Home */
-.container-video {
+/* Sección: Home */
+#home {
   width: 100%;
-  height: 94vh;
+  height: 95vh;
 }
-.filter {
-  position: absolute;
-  filter: blur(12px);
-  width: 100%;
-  top: -8%;
-}
-.text{
-  color: #FFFFFF !important;
-  font-size: 7em;
-  position: absolute;
-  z-index: 3;
-  left: 27%;
-  top: 43%;
-}
-video {
+.img-container {
   width: 100%;
   height: 100%;
+  background-image: url(../img/shutterstock_322577240.jpg);
+  background-size: cover;
 }
-h3 {
-  font-family: 'Paytone One', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: -4px;
+
+/* Span letters */
+.c {
+  margin-left: 2.3em;
+  letter-spacing: .15em;
 }
+.a {
+  margin-right: .56em;
+  letter-spacing: .15em;
+}
+.r {
+  margin-right: 1.2em;
+  letter-spacing: .15em;
+}
+.l {
+  margin-right: 1.2em;
+  letter-spacing: .15em;
+}
+.z {
+  margin-left: 1.35em;
+  letter-spacing: .15em;
+}
+.rectangle {
+  position: absolute;
+  border: 3px solid #af0c42;
+  padding-left: 7em;
+  padding-bottom: 47.6em;
+  left: 46.7%;
+  top: 16%;
+}
+
+/* Clip text element */
+.clip-text {
+  font-size: 12em;
+  line-height: .8em;
+  font-family: 'Italiana';
+  position: relative;
+  display: inline-block;
+  padding: .5em .75em;
+  text-align: center;
+  /* Color fallback */
+  color: #fff;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.clip-text:before,
+.clip-text:after {
+  position: absolute;
+  content: '';
+}
+
+/* Background */
+.clip-text:before {
+  z-index: -2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: inherit;
+  background-size: cover;
+}
+
+/* Text Background (black zone) */
+.clip-text:after {
+  position: absolute;
+  z-index: -1;
+  top: .25em;
+  right: .25em;
+  bottom: .25em;
+  left: .25em;
+  background-color: rgba(255, 255, 255, 0.85);
+}
+
 
 /* Section: AboutMe */
 #aboutMe {
-  position: relative;
-  z-index: 5;
   padding-top: 12%;
   width: 100%;
   height: 95vh;
   background-color: #af0c42;
-}
-.about-title {
-  text-shadow: 0 13.36px 8.896px #751736,0 -2px 1px #fff;
 }
 .border-img {
   border: 5px solid #FFF;
   border-radius: 50%;
   width: 400px;
   height: 400px;
-  margin-left: 30%;
 }
 .border-img img {
   width: 100%;
@@ -86,9 +148,12 @@ blockquote {
 #skills {
   padding-top: 5%;
   width: 100%;
-  height: 85vh;
+  height: 95vh;
   background-color: #ffffff;
   color: #af0c42;
+}
+#skills .row .col.s2 {
+  padding: 5em 3em 0;
 }
 
 /* Section: Works */
@@ -103,11 +168,38 @@ blockquote {
 #contact {
   padding: 5% 0;
   width: 100%;
-  height: 85vh;
+  height: 98vh;
   background-color: #ffffff;
   color: #af0c42;
 }
-
+#contact .container .row {
+  padding-top: 13%;
+}
+.border-contact {
+  background-color: #af0c42;
+  border: 1px solid white;
+  color: #FFF;
+  height: 25vh;
+  padding-top: 5% !important;
+}
+.border-contact:hover {
+  background-color: #FFF;
+  border: 3px solid #af0c42;
+  color: #af0c42;
+  transition-delay: 0.5 ease;
+}
+.border-contact svg {
+  color: #FFF;
+  font-size: 4em !important;
+}
+.border-contact svg:hover{
+  color: #af0c42;
+}
+h6 {
+  font-size: 1.5rem !important;
+  padding-bottom: 1em;
+  font-weight: 700 !important;
+}
 /* Footer */
 footer {
   background-color: #af0c42 !important;
@@ -237,4 +329,38 @@ svg, .devicon {
 	margin-top: -90px;
 	background-color: #af0c42;
 	background-position: 0 100px;
+}
+
+#hexagono {
+  height: 4em;
+  margin: 3.4641em 0;
+  position: relative;
+  width: 6.9282em;
+}
+#hexagono:before {
+  border-right:3.4641em solid transparent;
+  border-bottom:2em solid #ccc;
+  border-left:3.4641em solid transparent;
+  content: '';
+  height:0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -2em;
+  width: 0;
+}
+#hexagono:after {
+  border-top:2em solid #ccc;
+  border-right:3.4641em solid transparent;
+  border-left:3.4641em solid transparent;
+  bottom:-2em;
+  content: '';
+  height:0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width:0;
+}
+.hex {
+  object-fit: cover;
 }
