@@ -168,38 +168,53 @@ blockquote {
 #contact {
   padding: 5% 0;
   width: 100%;
-  height: 98vh;
+  height: 86vh;
   background-color: #ffffff;
   color: #af0c42;
 }
 #contact .container .row {
-  padding-top: 13%;
+  padding-top: 8.5%;
 }
 .border-contact {
-  background-color: #af0c42;
-  border: 1px solid white;
-  color: #FFF;
   height: 25vh;
   padding-top: 5% !important;
 }
-.border-contact:hover {
-  background-color: #FFF;
-  border: 3px solid #af0c42;
-  color: #af0c42;
-  transition-delay: 0.5 ease;
+
+button {
+  width: 50%;
+  background: #af0c42; 
+  outline: none;
+  position: relative;
+  color: #FFF !important;
+  border: 2px solid #FFF;
+  padding: 15px 50px;
+  overflow: hidden;
 }
-.border-contact svg {
-  color: #FFF;
-  font-size: 4em !important;
+button:hover:before {
+  opacity: 1; transform: translate(0,0);
 }
-.border-contact svg:hover{
-  color: #af0c42;
+button:before{
+  content: attr(data-hover);
+  position: absolute;
+  top: 1.1em; left: 0;
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  font-weight: 800;
+  font-size: 1.2em;
+  opacity: 0;
+  transform: translate(-100%,0);
+  transition: all .3s ease-in-out;
 }
-h6 {
-  font-size: 1.5rem !important;
-  padding-bottom: 1em;
-  font-weight: 700 !important;
+button:hover div{opacity: 0; transform: translate(100%,0)}
+button div{
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 800;
+  font-size: .8em;
+  transition: all .3s ease-in-out;
 }
+
 /* Footer */
 footer {
   background-color: #af0c42 !important;
