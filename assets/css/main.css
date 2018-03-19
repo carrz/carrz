@@ -127,8 +127,8 @@ h3 {
 .border-img {
   border: 5px solid #FFF;
   border-radius: 50%;
-  width: 400px;
-  height: 400px;
+  width: 25em;
+  height: 25em;
 }
 .border-img img {
   width: 100%;
@@ -146,9 +146,8 @@ blockquote {
 
 /* Section: Skills */
 #skills {
-  padding-top: 5%;
+  padding: 5% 0;
   width: 100%;
-  height: 95vh;
   background-color: #ffffff;
   color: #af0c42;
 }
@@ -162,6 +161,10 @@ blockquote {
   width: 100%;
   background-color: #af0c42;
   color: #ffffff;
+}
+.mobile {
+  width: 31.5% !important;
+  left: 35% !important;
 }
 
 /* Sección: Contact */
@@ -378,4 +381,42 @@ svg, .devicon {
 }
 .hex {
   object-fit: cover;
+}
+
+@media only screen and (max-width: 1024px) {
+  .clip-text{
+    font-size: 9.2rem;
+  }
+  .rectangle {
+    padding-bottom: 38.4em;
+    padding-left: 6em;
+    left: 45.5%;
+  }
+  .border-img {
+    width: 20em;
+    height: 20em;
+  }
+  .text-about {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .clip-text {
+    font-size: 5rem;
+    line-height: 1.5em;
+  }
+  .c, .a, .r, .l, .z {
+    margin: 0;
+  }
+  .rectangle {
+    border: none;
+  }
+  .border-img {
+    width: 12em;
+    height: 12em;
+  }
+  .text-about {
+    font-size: 1.2rem;
+  }
 }
