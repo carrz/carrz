@@ -175,8 +175,8 @@ blockquote {
   background-color: #ffffff;
   color: #af0c42;
 }
-#contact .container .row {
-  padding-top: 8.5%;
+#contact .container .row .col{
+  padding: 3% 0 2%;
 }
 .border-contact {
   height: 25vh;
@@ -390,10 +390,10 @@ svg, .devicon {
 
 @media only screen and (max-width: 1024px) {
   .clip-text{
-    font-size: 9.2rem;
+    font-size: 8.7rem;
   }
   .rectangle {
-    padding-bottom: 38.4em;
+    padding-bottom: 36em;
     padding-left: 6em;
     left: 45.5%;
   }
