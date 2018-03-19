@@ -217,6 +217,11 @@ button div{
   font-size: .8em;
   transition: all .3s ease-in-out;
 }
+button:focus {
+  background: #FFF !important;
+  color: #af0c42 !important;
+  border: 2px solid #af0c42;
+}
 
 /* Footer */
 footer {
@@ -419,4 +424,25 @@ svg, .devicon {
   .text-about {
     font-size: 1.2rem;
   }
+}
+
+@media only screen and (max-width: 320px) {
+.clip-text {
+  font-size: 3.7rem;
+  line-height: 1.8em;
+}
+.rectangle {
+  border: none;
+}
+.border-img {
+  width: 9.5em;
+  height: 9.5em;
+  margin-top: 6em;
+}
+.about-title {
+  margin-bottom: .1em !important;
+}
+.text-about {
+  font-size: .92rem;
+}
 }
