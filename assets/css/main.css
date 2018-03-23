@@ -294,7 +294,6 @@ svg, .devicon {
 	width: 140px;
 	height:  140px;
 	margin: 20px;
-	
 	border-radius: 999px;
 }
 .Awesome .back{
@@ -406,6 +405,21 @@ svg, .devicon {
   }
 }
 
+@media only screen and (max-width: 768px) {
+  .clip-text{
+    font-size: 7rem;
+    padding: 1.3em .75em;
+  }
+  .rectangle {
+    padding-bottom: 28.5em;
+    padding-left: 4.5em;
+    top: 26%;
+  }
+  .devicon {
+    margin: 0 3.5em !important;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .clip-text {
     font-size: 5rem;
@@ -417,32 +431,29 @@ svg, .devicon {
   .rectangle {
     border: none;
   }
-  .border-img {
-    width: 12em;
-    height: 12em;
+  .about-title {
+    margin-bottom: .5em !important;
   }
   .text-about {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+  }
+  .devicon {
+    margin: 0 1.5em !important;
   }
 }
 
 @media only screen and (max-width: 320px) {
-.clip-text {
-  font-size: 3.7rem;
-  line-height: 1.8em;
-}
-.rectangle {
-  border: none;
-}
-.border-img {
-  width: 9.5em;
-  height: 9.5em;
-  margin-top: 6em;
-}
-.about-title {
-  margin-bottom: .1em !important;
-}
-.text-about {
-  font-size: .92rem;
-}
+  .clip-text {
+    font-size: 3.7rem;
+    line-height: 1.8em;
+  }
+  .rectangle {
+    border: none;
+  }
+  .about-title {
+    margin-bottom: .1em !important;
+  }
+  .devicon {
+    margin: 0 1em !important;
+  }
 }
